@@ -1486,6 +1486,7 @@ print_set_output(char *name, TBOOLEAN append_p)
 #endif
 	    if (0 > fclose(print_out))
 		perror(print_out_name);
+	print_out = stderr;
     }
 
     if (print_out_name)
